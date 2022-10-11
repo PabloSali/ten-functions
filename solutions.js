@@ -32,17 +32,17 @@ function isFalse(inputtedVariable){
 //---------------------------------------------
 // 3
 function not(inputtedVariable){
-    return inputtedVariable !== true;
+    return !inputtedVariable;
 }
 //---------------------------------------------
 // 4
 function addOne(inputtedVariable){
-    return inputtedVariable + 1;
+    return parseFloat(inputtedVariable) + 1;
 }
 //---------------------------------------------
 // 5
 function isEven(inputtedVariable){
-return parseFloat(inputtedVariable) === (inputtedVariable % 2 === 0);
+return inputtedVariable % 2 == 0;
 }
 //---------------------------------------------
 // 6
@@ -67,5 +67,5 @@ function and(x, y){
 //---------------------------------------------
 // 10
 function concat(x, y){
-    return (x + y);
+    return ((x.toString()) + (y.toString()));
 }
